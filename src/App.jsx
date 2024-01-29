@@ -15,6 +15,7 @@ function App() {
   return (
     <>
      <h1>Hello world</h1>
+     <img className="avatar" src='https://th.bing.com/th/id/OIP._L9JfwZghKVXuhCtEZnF9QHaI4?rs=1&pid=ImgDetMain'/>
      <MyButton/>
      <MyButton2/>
     </>
