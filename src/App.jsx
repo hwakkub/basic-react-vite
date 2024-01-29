@@ -10,12 +10,22 @@ function MyButton2() {
   );
 }
 
+const user = {
+  name: 'world',
+  imageUrl: 'https://th.bing.com/th/id/OIP._L9JfwZghKVXuhCtEZnF9QHaI4?rs=1&pid=ImgDetMain',
+  imageSize: 90,
+};
+
 function App() {
 
   return (
     <>
-     <h1>Hello world</h1>
-     <img className="avatar" src='https://th.bing.com/th/id/OIP._L9JfwZghKVXuhCtEZnF9QHaI4?rs=1&pid=ImgDetMain'/>
+     <h1>Hello {user.name}</h1>
+     <img className="avatar" src={user.imageUrl} alt={'Photo of ' + user.name}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize
+        }}/>
      <MyButton/>
      <MyButton2/>
     </>
